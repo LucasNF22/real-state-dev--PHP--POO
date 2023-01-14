@@ -1,0 +1,17 @@
+{
+    "name": "chack/realstatedev-poo",
+    "description": "Migracion de proyecto a POO.",
+    "type": "proyect",
+    "authors": [
+        {
+            "name": "LucasNF22",
+            "email": "lucasnfiorentino@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\" : "./clases"
+        }
+    }
+}
