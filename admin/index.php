@@ -3,9 +3,6 @@
 require '../includes/app.php';
 
 $auth = estaAutenticado();
-if(!$auth){
-    header('location: /');
-}
 
 
 

@@ -3,9 +3,6 @@
 require '../../includes/app.php';
 
 $auth = estaAutenticado();
-if(!$auth){
-    header('location: /');
-}
 
 // Validar el id valido en la URL
 $id = $_GET['id'];
@@ -20,7 +17,7 @@ if(!$id){
 $db = conectarDB();
 
 // Consultar datos de la propiedad
-$consulta_propiedad = "SELECT * FROM propiedades WHERE id = ${id}";
+$consulta_propiedad = "SELECT * FROM propiedades WHERE id = $id";
 $resultado_propiedad = mysqli_query($db, $consulta_propiedad);
 $propiedad = mysqli_fetch_assoc($resultado_propiedad);
 

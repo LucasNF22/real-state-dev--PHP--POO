@@ -38,12 +38,12 @@ $auth = $_SESSION['login'] ?? false;
 
                 <nav class="navegacion">
                     <img class="dark-mode-boton" src="/build/img/dark-mode.svg" alt="icono dark-mode">
-                    <a href="nosotros.php">Nosotros</a>
-                    <a href="anuncios.php">Anuncios</a>
-                    <a href="blog.php">Blog</a>
-                    <a href="contacto.php">Contacto</a>
+                    <a href="/nosotros.php">Nosotros</a>
+                    <a href="/anuncios.php">Anuncios</a>
+                    <a href="/blog.php">Blog</a>
+                    <a href="/contacto.php">Contacto</a>
                     <?php if($auth): ?>
-                        <a href="cerrar-sesion.php">LogOut</a>
+                        <a href="/cerrar-sesion.php">LogOut</a>
                     <?php endif ?>
                 </nav>
 
